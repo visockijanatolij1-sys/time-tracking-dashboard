@@ -1,0 +1,85 @@
+@use "variables";
+
+.wrapper{
+    max-width: 1470px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.dashboard-body{
+    max-width: 1116px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    min-height: 520px;
+}
+.dashboard-report{
+    max-width: 255px;
+    min-height: 254px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: variables.$navy900;
+
+}
+.report-person{
+    background-color: variables.$purple600;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.person-avatar{
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid variables.$white;
+    img{
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+    }
+}
+.person-block{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+.person-text{
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    color: variables.$navy200;
+}
+.person-name{
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0px;
+    font-weight: 300;
+    color: variables.$white;
+}
+
+.report-list{
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+.report-button{
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0px;
+    color: variables.$purple500;
+    &:active{
+        color: variables.$white;
+    }
+}
+
+// ==================================
+
