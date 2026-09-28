@@ -207,3 +207,97 @@
     background-color: variables.$yellow300;
     background-image: url("../images/icon-self-care.svg");
 }
+
+@media (max-width: 1110px) {
+    .dashboard-body{
+        flex-direction: column;
+        gap: 24px;
+    }
+    .dashboard-report{
+        max-width: none;
+        width: 100%;
+        min-height: 203px;
+    }
+    .report-person{
+        flex-direction: row;
+        align-items: center;
+        gap: 32px;
+    }
+    .person-block{
+        margin-bottom: 0;
+    }
+    .results-row{
+        gap: 24px;
+    }
+}
+
+@media (max-width: 859px) {
+    .person-avatar{
+        width: 68px;
+        height: 68px;
+    }
+    .person-name{
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0px;
+        font-weight: 200;
+    }
+    .results-column{
+        width: 188px;
+    }
+    .results-card{
+        padding: 21px;
+    }
+    .report-list{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 64px;
+    }
+}
+
+@media (max-width: 629px) {
+    .dashboard-body{
+        max-width: none;
+        width: 100%;
+    }
+    .dashboard-results{
+        max-width: none;
+        width: 100%;
+        gap: 40px;
+    }
+    .results-row{
+        flex-direction: column;
+        width: 100%;
+        gap: 40px;
+    }
+    .results-column{
+        width: 100%;
+        min-height: 160px;
+    }
+    .results-card{
+        padding: 27px 24px;
+        gap: 7px;
+        min-height: 122px;
+        justify-content: space-between;
+    }
+    .card-result_times{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .card-result_current-time{
+        font-size: 32px;
+        line-height: 38px;
+        letter-spacing: 0px;
+        
+    }
+}
+@media (max-width: 424.98px) {
+    .report-person{
+        gap: 24px;
+    }
+    .report-list{
+        gap: 24px;
+    }
+}
