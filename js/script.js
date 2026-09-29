@@ -14,7 +14,9 @@ fetch("/js/data.json")
         button.classList.add("active");
         button.setAttribute("aria-pressed", "true");
 
-        activeTimeframe = button.textContent.toLowerCase();
+        activeTimeframe = button.textContent.toLowerCase().trim();
+
+        console.log(JSON.stringify(activeTimeframe));
         drawActivity();
       });
     });
@@ -27,6 +29,7 @@ fetch("/js/data.json")
       const previousActivity = document.querySelectorAll(
         ".card-result_past-time",
       );
+
       activity.forEach((element, index) => {
         let currentHours = data[index].timeframes[activeTimeframe].current;
         let previousHours = data[index].timeframes[activeTimeframe].previous;
